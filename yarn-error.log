@@ -1,0 +1,36 @@
+Arguments: 
+  D:\node\node.exe D:\node\node_global\node_modules\yarn\bin\yarn.js add HotModuleReplacementPlugin
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\git\Git\cmd;D:\node\;D:\node\node_global;E:\java\java1.8\bin;D:\vscode\Microsoft VS Code\bin;D:\node\node_global;C:\Users\Administrator.DQ05HZE455Q339G\AppData\Local\GitHubDesktop\bin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  10.14.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.npm.taobao.org/HotModuleReplacementPlugin: Not found
+      at Request.params.callback [as _callback] (D:\node\node_global\node_modules\yarn\lib\cli.js:66255:18)
+      at Request.self.callback (D:\node\node_global\node_modules\yarn\lib\cli.js:129397:22)
+      at Request.emit (events.js:182:13)
+      at Request.<anonymous> (D:\node\node_global\node_modules\yarn\lib\cli.js:130369:10)
+      at Request.emit (events.js:182:13)
+      at IncomingMessage.<anonymous> (D:\node\node_global\node_modules\yarn\lib\cli.js:130291:12)
+      at Object.onceWrapper (events.js:273:13)
+      at IncomingMessage.emit (events.js:187:15)
+      at endReadableNT (_stream_readable.js:1094:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
