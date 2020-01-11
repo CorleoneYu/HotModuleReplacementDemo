@@ -4,6 +4,7 @@ let lastHash; // 表示上一次编译生成的hash
 
 // [4] 监听webpackHotUpdate事件, 执行hotCheck()
 hotEmitter.on('webpackHotUpdate', (hash) => {
+  console.log('webpackHotUpdate', hash, lastHash);
   currentHash = hash;
   if (!lastHash) {
     // 说明是第一次请求
@@ -103,7 +104,7 @@ window.webpackHotUpdate = (chunkID, moreModules) => {
 
     // 4. 让父模块中存储的_acceptedDependencies执行
     newModule.parents && newModule.parents.forEach(parentID => {
-      const parentModule = __webpack_require__[parentID];
+      const parentModule = __webpack_require__.c[parentID];
       parentModule.hot._acceptedDependencies[moduleID] && parentModule.hot._acceptedDependencies[moduleID]();
     })
   })
